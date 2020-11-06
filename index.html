@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="main">
+      <a href="" class="logo">
+        <img src="images/logo.svg">
+      </a>
+
+      <div class="title">
+        <p>We are launching <span class="bold">soon!</span> </p>
+      </div>
+
+      <div class="subtitle">
+        <p>Subscribe and get notified</p>
+      </div>
+      
+      <div class="form">
+
+        <div class="btn" style="justify-self: end;">
+          <input id="fNameInput" type="search" class="placeholder" placeholder="First Name">
+          <p id="error_fName">Please enter your first name</p>
+        </div>
+
+        <div class="btn" style="justify-self: start;">
+          <input id="lNameInput" type="search" class="placeholder" placeholder="Last Name">
+          <p id="error_lName">Please provide your last name</p>
+        </div>
+
+        <div class="btn" style="justify-self: end;">
+          <input id="passwordInput" type="password" class="placeholder" placeholder="Password">
+          <p id="error_pw">Please enter your password</p>
+          <p id="error_pw1">Password must be longer than 6 characters</p>
+        </div>
+
+        <div class="btn" style="justify-self: start;">
+          <input id="emailInput" type="search" class="placeholder" placeholder="Your email adress...">
+          <p id="error_email">Please provide a valid email address</p>
+        </div>
+      </div>
+
+        <div class="validate" onclick="ValidateEmail()">
+          <button class="submitBtn" type="submit">Notify Me</button>
+          <p id="welcome">Welcome Aboard!</p>
+        </div>
+
+      
+
+      <div class="wrapper" >
+        <img src="images/illustration-dashboard.png">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <div class="footer_copy">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+    </footer>
+  
+
+    <div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Chandler</a>.
+      </p>
+  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
